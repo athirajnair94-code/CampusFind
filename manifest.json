@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusFix</title>
+  <link rel="manifest" href="/CampusFix/manifest.json">
+ </head>
+<body>
 {  
   "name": "CampusFix",
   "short_name": "CampusFix",
@@ -10,3 +18,5 @@
     { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" } 
   ]
 }
+</body>
+</html>
