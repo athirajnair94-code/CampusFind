@@ -1,8 +1,8 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CampusFix Pro</title>
+<title>CampusFind</title>
 <style>
 *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f4f7fb;color:#172033}
 header{background:linear-gradient(135deg,#172554,#2563eb);color:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
@@ -14,7 +14,7 @@ label{display:block;font-size:13px;font-weight:700;margin:13px 0 6px}input,selec
 </style></head>
 <body>
 <header>
-<div><div class="logo" id="brand">🏫 CampusFix</div><div class="tag" id="tag">Smart Campus Complaint, Support & Events</div></div>
+<div><div class="logo" id="brand">🏫 CampusFind</div><div class="tag" id="tag">Smart Campus Complaint, Support & Events</div></div>
 <nav>
 <button id="navStudent" onclick="page('student')">Student</button><button id="navTeacher" onclick="page('teachers')">Teachers</button><button id="navStaff" onclick="page('staff')">Staff</button><button id="navEvents" onclick="page('events')">Events</button><button id="navAdmin" onclick="page('admin')">Coordinator</button>
 </nav></header>
@@ -36,7 +36,7 @@ label{display:block;font-size:13px;font-weight:700;margin:13px 0 6px}input,selec
 <div class="grid"><div class="card"><input id="staffSearch" placeholder="Search staff/service" oninput="renderStaff()"><div id="staffList"></div></div>
 <div class="card"><h2>🆘 Request Assistance</h2><form id="staffForm"><label>Service</label><select id="service" required></select><label>Location</label><input id="staffLoc" required><label>Priority</label><select id="staffPrio"><option>Normal</option><option>High</option><option>Urgent</option></select><label>Problem</label><textarea id="staffMsg" required></textarea><button class="btn">Send Request</button><div id="staffOK" class="success"></div></form></div></div></section>
 
-<section id="events" class="hidden"><div class="hero"><h1>📅 Campus Events</h1><p class="muted">IEDC, IEEE, CSI and other college activities.</p></div><div id="eventList"></div></section>
+<section id="events" class="hidden"><div class="hero"><h1>📅 Campus Events</h1><p class="muted">IEEE, CSI, IEDC and other college activities.</p></div><div id="eventList"></div></section>
 
 <section id="admin" class="hidden"><div class="hero"><h1>⚙️ Coordinator Dashboard</h1><p class="muted">Only authorized coordinators can edit campus data.</p>
 <div class="actions"><button class="btn" onclick="login()">🔐 Coordinator Login</button><button class="btn secondary" onclick="logout()">Logout</button><span id="who" class="pill"></span></div></div>
